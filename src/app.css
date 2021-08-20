@@ -51,7 +51,7 @@ a {
   }
 }
 .logo {
-  height: 13vmin;
+  height: 10vmin;
   pointer-events: none;
   float: left;
 }
@@ -67,6 +67,8 @@ a {
 
 .header {
   display: flex;
+  height: 80px;
+  width: 100%;  
   justify-items: center;
   align-items: center;
   font-family: sans-serif;
@@ -97,6 +99,11 @@ html {
   background: #ada2a2;
   overflow: hidden;
   font-family: "Lato", sans-serif;
+}
+.container{
+  margin: 0, auto;
+  padding: 0, 15px;
+  max-width: 1200px;
 }
 
 .logo-label {

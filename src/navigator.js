@@ -21,8 +21,10 @@ function navigator() {
       <div className="page">
         <Header></Header>
 
-        <Route exact path="/" component={HomePage}></Route>
-        <Route exact path="/buttons" component={ButtonsPage}></Route>
+        <div className="container">
+          <Route exact path="/" component={HomePage}></Route>
+          <Route exact path="/buttons" component={ButtonsPage}></Route>
+        </div>
       </div>
 
       <Login></Login>
