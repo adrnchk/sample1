@@ -8,34 +8,44 @@ function Header() {
   return (
     <div className="header">
       <Link to="/">
-        <img style={{marginLeft:"20px"}} src={logo} className="logo" alt="logo"></img>        
-      </Link>
-      <h1 className="logo-label">React Snippets</h1>
-      <Link to="/">
-        <span style={{marginLeft:"60px"}} className="blur-element">Home</span>
-      </Link>
-      <Link to="/buttons">
-        <span className="blur-element">Buttons</span>
+        <img
+          style={{ marginLeft: "20px" }}
+          src={logo}
+          className="logo"
+          alt="logo"
+        ></img>
       </Link>
       <Link to="/">
-        <span className="blur-element">Inputs</span>
+        <h1 className="logo-label">React Snippets</h1>
       </Link>
-      <Link to="/">
-        <span className="blur-element">Forms</span>
-      </Link>
-      <Link to="/">
-        <span className="blur-element">About us</span>
-      </Link>
-      <Link to="/">
-        <span className="blur-element">Reviews</span>
-      </Link>
-
+      <div className="header-nav">
+        <Link to="/">
+          <span style={{ marginLeft: "60px" }} className="blur-element">
+            Home
+          </span>
+        </Link>
+        <Link to="/buttons">
+          <span className="blur-element">Buttons</span>
+        </Link>
+        <Link to="/">
+          <span className="blur-element">Inputs</span>
+        </Link>
+        <Link to="/">
+          <span className="blur-element">Forms</span>
+        </Link>
+        <Link to="/">
+          <span className="blur-element">About us</span>
+        </Link>
+        <Link to="/">
+          <span className="blur-element">Reviews</span>
+        </Link>
+      </div>
       <СircuitButton
         onClick={() => {
           document
             .querySelector(".login-container")
             .classList?.toggle("login-container-active");
-            document
+          document
             .querySelector(".page")
             .classList?.toggle("page-login-active");
         }}
